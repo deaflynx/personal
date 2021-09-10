@@ -11,6 +11,7 @@ import { SharedModule } from '@shared/public-api';
 import { HomeComponentsModule } from '@home/components/public-api';
 import { ExampleMap } from './components/map/example-map.component';
 import { CustomAlarmsTableWidgetComponent } from './components/alarm/custom-alarms-table-widget.component';
+import { TbTableModule } from './components/table/tb-table.module';
 
 @NgModule({
   declarations: [
@@ -20,12 +21,13 @@ import { CustomAlarmsTableWidgetComponent } from './components/alarm/custom-alar
   imports: [
     CommonModule,
     HomeComponentsModule,
-    SharedModule
+    SharedModule,
   ],
   exports: [
     ExampleMap,
     ExampleModule,
-    CustomAlarmsTableWidgetComponent
+    CustomAlarmsTableWidgetComponent,
+    TbTableModule
   ]
 })
 export class ThingsboardExtensionWidgetsModule {

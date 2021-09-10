@@ -5,13 +5,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ExampleComponent } from './example.component';
+import { AccordionModule } from 'primeng/accordion';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
     ExampleComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AccordionModule,
+    ButtonModule
   ],
   exports: [
     ExampleComponent

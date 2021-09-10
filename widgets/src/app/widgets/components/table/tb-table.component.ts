@@ -5,17 +5,17 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'tb-example',
-  templateUrl: './example.component.html',
+  selector: 'tb-table',
+  templateUrl: './tb-table.component.html',
   styleUrls: [
-    './example.component.scss',
+    './tb-table.component.scss',
     '../../../../../node_modules/primeicons/primeicons.css',
     '../../../../../node_modules/primeng/resources/themes/nova-light/theme.css',
     '../../../../../node_modules/primeng/resources/primeng.min.css'
   ],
   encapsulation: ViewEncapsulation.None
 })
-export class ExampleComponent implements OnInit {
+export class TbTableComponent implements OnInit {
 
   constructor() { }
 

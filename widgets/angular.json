@@ -35,6 +35,7 @@
   },
   "defaultProject": "widget-extension",
   "cli": {
-    "packageManager": "yarn"
+    "packageManager": "yarn",
+    "analytics": false
   }
 }

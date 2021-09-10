@@ -1,5 +1,5 @@
 {
-  "compileOnSave": false,
+  "compileOnSave": true,
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
@@ -58,6 +58,9 @@
       ],
       "jstree": [
         "node_modules/jstree/dist/jstree.min.js"
+      ],
+      "primeng/*": [
+        "node_modules/primeng/*"
       ]
     }
   }
