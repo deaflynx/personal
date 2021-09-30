@@ -2,7 +2,8 @@
 /// Copyright © 2021 ThingsBoard, Inc.
 ///
 
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { AfterViewInit, Component, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Table } from 'primeng/table';
 
 @Component({
   selector: 'tb-table',
@@ -15,11 +16,58 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   ],
   encapsulation: ViewEncapsulation.None
 })
-export class TbTableComponent implements OnInit {
+export class TbTableComponent implements AfterViewInit {
 
-  constructor() { }
+  @ViewChild('dt') dt: Table;
+  cars = []
+  dataKey = 'vin'
 
-  ngOnInit() {
+  constructor() {
+    for(let i=0; i < 100; i++) {
+      this.cars.push(
+        { year: 2000, brand: 'Audi', color: 'green' },
+        { year: 2010, brand: 'BMW', color: 'red' },
+        { year: 2020, brand: 'Mercedes', color: 'blue' },
+        { year: 2000, brand: 'Audi', color: 'green' },
+        { year: 2010, brand: 'BMW', color: 'red' },
+        { year: 2020, brand: 'Mercedes', color: 'blue' },
+        { year: 2000, brand: 'Audi', color: 'green' },
+        { year: 2010, brand: 'BMW', color: 'red' },
+        { year: 2020, brand: 'Mercedes', color: 'blue' },
+        { year: 2000, brand: 'Audi', color: 'green' },
+      )
+    }
+    this.cars.forEach((o,i) => o['vin'] = i)
+  }
+
+  ngAfterViewInit(): void {
+    this.dt.scrollableViewChild.virtualScrollBody.elementScrolled()
+      .subscribe(event => {
+        this.updateRowHighlight();
+      });
+  }
+
+  select(data: any) {
+    this.updateRowHighlight();
+  }
+
+  unselect(data: any) {
+    this.updateRowHighlight();
+  }
+
+  private updateRowHighlight(){
+    const elements = document.getElementsByClassName('ui-selectable-row');
+    for (let i = 0 ; i < elements.length; i++){
+      const ngContext = elements[i]['__ngContext__'];
+      const index = ngContext[1]['bindingStartIndex'];
+      const dataKeyValue = ngContext[index][this.dataKey];
+      if( !this.dt.selection || this.dt.selection[this.dataKey] !== dataKeyValue ){
+        elements[i].classList.remove('ui-state-highlight');
+      }
+      else{
+        elements[i].classList.add('ui-state-highlight');
+      }
+    }
   }
 
 }

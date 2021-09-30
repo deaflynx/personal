@@ -12,6 +12,7 @@ import { HomeComponentsModule } from '@home/components/public-api';
 import { ExampleMap } from './components/map/example-map.component';
 import { CustomAlarmsTableWidgetComponent } from './components/alarm/custom-alarms-table-widget.component';
 import { TbTableModule } from './components/table/tb-table.module';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { TbTableModule } from './components/table/tb-table.module';
     CommonModule,
     HomeComponentsModule,
     SharedModule,
+    TableModule
   ],
   exports: [
     ExampleMap,
