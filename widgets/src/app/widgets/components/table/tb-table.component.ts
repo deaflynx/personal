@@ -4,6 +4,7 @@
 
 import { AfterViewInit, Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { Table } from 'primeng/table';
+import { FilterUtils } from 'primeng/utils';
 
 @Component({
   selector: 'tb-table',
@@ -19,8 +20,17 @@ import { Table } from 'primeng/table';
 export class TbTableComponent implements AfterViewInit {
 
   @ViewChild('dt') dt: Table;
-  cars = []
-  dataKey = 'vin'
+
+  cars = [];
+  dataKey = 'vin';
+  yearFilter;
+  cols;
+  brands;
+  colors;
+  totalRecords;
+
+  yearTimeout: any;
+
 
   constructor() {
     for(let i=0; i < 100; i++) {
@@ -37,7 +47,51 @@ export class TbTableComponent implements AfterViewInit {
         { year: 2000, brand: 'Audi', color: 'green' },
       )
     }
-    this.cars.forEach((o,i) => o['vin'] = i)
+    this.cars.forEach((o,i) => o['vin'] = i);
+    this.brands = [
+      { label: 'All Brands', value: null },
+      { label: 'Audi', value: 'Audi' },
+      { label: 'BMW', value: 'BMW' },
+      { label: 'Fiat', value: 'Fiat' },
+      { label: 'Honda', value: 'Honda' },
+      { label: 'Jaguar', value: 'Jaguar' },
+      { label: 'Mercedes', value: 'Mercedes' },
+      { label: 'Renault', value: 'Renault' },
+      { label: 'VW', value: 'VW' },
+      { label: 'Volvo', value: 'Volvo' }
+    ];
+
+    this.colors = [
+      { label: 'White', value: 'White' },
+      { label: 'Green', value: 'Green' },
+      { label: 'Silver', value: 'Silver' },
+      { label: 'Black', value: 'Black' },
+      { label: 'Red', value: 'Red' },
+      { label: 'Maroon', value: 'Maroon' },
+      { label: 'Brown', value: 'Brown' },
+      { label: 'Orange', value: 'Orange' },
+      { label: 'Blue', value: 'Blue' }
+    ];
+
+    this.cols = [
+      { field: 'vin', header: 'Vin' },
+      { field: 'year', header: 'Year' },
+      { field: 'brand', header: 'Brand' },
+      { field: 'color', header: 'Color' }
+    ];
+
+    FilterUtils['custom'] = (value, filter): boolean => {
+      if (filter === undefined || filter === null || filter.trim() === '') {
+        return true;
+      }
+
+      if (value === undefined || value === null) {
+        return false;
+      }
+
+      return parseInt(filter) > value;
+    }
+
   }
 
   ngAfterViewInit(): void {
@@ -47,6 +101,31 @@ export class TbTableComponent implements AfterViewInit {
       });
   }
 
+  public selectionItemForFilter(e) {
+    const colsTempor = e.value;
+    colsTempor.sort(function (a, b) {
+      return a.index - b.index;
+    });
+    this.cols = [];
+    this.cols = colsTempor;
+    if (e.value.length > 10) {
+      e.value.pop();
+    }
+  }
+
+  applyFilterGlobal($event, stringVal) {
+    this.dt.filterGlobal(($event.target as HTMLInputElement).value, stringVal);
+  }
+
+  onYearChange(event, dt) {
+    if (this.yearTimeout) {
+      clearTimeout(this.yearTimeout);
+    }
+
+    this.yearTimeout = setTimeout(() => {
+      dt.filter(event.value, 'year', 'gt');
+    }, 250);
+  }
   select(data: any) {
     this.updateRowHighlight();
   }
