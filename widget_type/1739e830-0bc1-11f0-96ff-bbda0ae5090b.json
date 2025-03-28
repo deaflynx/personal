@@ -33,6 +33,7 @@
     "scada" : false,
     "tags" : null
   },
+  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   }
