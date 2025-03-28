@@ -21,7 +21,7 @@
     },
     "deviceProfileId" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "97e23f10-0ae9-11f0-b9eb-956da8c10b3a"
+      "id" : "0dd6eec0-0bd3-11f0-96ff-bbda0ae5090b"
     },
     "externalId" : null,
     "firmwareId" : null,
@@ -33,6 +33,23 @@
     "name" : "AV",
     "ownerId" : null,
     "softwareId" : null,
-    "type" : "default"
+    "type" : "Test1 Dev Profile"
+  },
+  "credentials" : {
+    "credentialsId" : "GdHMUVl2d0AZwoPvadxb",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1743165628843,
+      "longValue" : null,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
   }
 }
