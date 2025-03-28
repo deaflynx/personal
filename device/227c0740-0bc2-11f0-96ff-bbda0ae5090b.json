@@ -30,7 +30,7 @@
       "id" : "227c0740-0bc2-11f0-96ff-bbda0ae5090b"
     },
     "label" : "",
-    "name" : "Test 3",
+    "name" : "Test ABC",
     "ownerId" : null,
     "softwareId" : null,
     "type" : "thermostat"
@@ -40,6 +40,7 @@
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
+  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : false,
