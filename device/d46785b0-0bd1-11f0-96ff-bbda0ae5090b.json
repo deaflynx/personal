@@ -34,23 +34,5 @@
     "ownerId" : null,
     "softwareId" : null,
     "type" : "default"
-  },
-  "credentials" : {
-    "credentialsId" : "GdHMUVl2d0AZwoPvadxb",
-    "credentialsType" : "ACCESS_TOKEN",
-    "credentialsValue" : null
-  },
-  "relations" : [ ],
-  "attributes" : {
-    "SERVER_SCOPE" : [ {
-      "booleanValue" : false,
-      "doubleValue" : null,
-      "jsonValue" : null,
-      "key" : "active",
-      "lastUpdateTs" : 1743165628843,
-      "longValue" : null,
-      "strValue" : null
-    } ],
-    "SHARED_SCOPE" : [ ]
   }
 }
