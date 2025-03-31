@@ -1,0 +1,34 @@
+{
+  "entityType" : "WIDGET_TYPE",
+  "entity" : {
+    "fqn" : "custom_widgets2.firmware_upload",
+    "name" : "Firmware upload",
+    "deprecated" : false,
+    "image" : "tb-image;/api/images/tenant/firmware_upload_widget_image.png",
+    "description" : null,
+    "descriptor" : {
+      "type" : "static",
+      "sizeX" : 7.5,
+      "sizeY" : 4.5,
+      "resources" : [ ],
+      "templateHtml" : "<tb-firmware-upload-widget \n    [ctx]=\"ctx\">\n</tb-firmware-upload-widget>",
+      "templateCss" : "",
+      "controllerScript" : "self.onInit = function() {\n}\n\nself.onDataUpdated = function() {\n}\n\nself.onDestroy = function() {\n}",
+      "settingsSchema" : "{\n    \"schema\": {\n        \"type\": \"object\",\n        \"title\": \"Settings\",\n        \"properties\": {\n            \"widgetTitle\": {\n                \"title\": \"Widget title\",\n                \"type\": \"string\",\n                \"default\": \"\"\n            }\n        },\n        \"required\": []\n    },\n    \"form\": [\n        \"widgetTitle\"\n    ]\n}",
+      "dataKeySettingsSchema" : "{}\n",
+      "defaultConfig" : "{\"datasources\":[{\"type\":\"static\",\"name\":\"function\",\"dataKeys\":[{\"name\":\"f(x)\",\"type\":\"function\",\"label\":\"Random\",\"color\":\"#2196f3\",\"settings\":{},\"_hash\":0.15479322438769105,\"funcBody\":\"var value = prevValue + Math.random() * 100 - 50;\\nvar multiplier = Math.pow(10, 2 || 0);\\nvar value = Math.round(value * multiplier) / multiplier;\\nif (value < -1000) {\\n\\tvalue = -1000;\\n} else if (value > 1000) {\\n\\tvalue = 1000;\\n}\\nreturn value;\"}]}],\"timewindow\":{\"realtime\":{\"timewindowMs\":60000}},\"showTitle\":true,\"backgroundColor\":\"rgb(255, 255, 255)\",\"color\":\"rgba(0, 0, 0, 0.87)\",\"padding\":\"8px\",\"settings\":{},\"title\":\"Firmware upload\",\"dropShadow\":true,\"showTitleIcon\":false,\"iconColor\":\"rgba(0, 0, 0, 0.87)\",\"iconSize\":\"24px\",\"titleTooltip\":\"\",\"enableFullscreen\":false,\"enableDataExport\":true,\"widgetStyle\":{},\"titleStyle\":{\"fontSize\":\"16px\",\"fontWeight\":400},\"showLegend\":false}"
+    },
+    "externalId" : null,
+    "resources" : null,
+    "id" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "4b3abb70-d73a-11ef-8b55-eb8ac33a039f"
+    },
+    "scada" : false,
+    "tags" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
