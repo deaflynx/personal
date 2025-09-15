@@ -1,0 +1,37 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "data" : "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IS0tIFVwbG9hZGVkIHRvOiBTVkcgUmVwbywgd3d3LnN2Z3JlcG8uY29tLCBHZW5lcmF0b3I6IFNWRyBSZXBvIE1peGVyIFRvb2xzIC0tPg0KPHN2ZyB3aWR0aD0iODAwcHgiIGhlaWdodD0iODAwcHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik00IDE0Ljc1MTlDMy4zNzAzNyAxMy44NzY4IDMgMTIuODA1OSAzIDExLjY0OTNDMyA5LjIwMDA4IDQuOCA2LjkzNzUgNy41IDYuNUM4LjM0Njk0IDQuNDg2MzcgMTAuMzUxNCAzIDEyLjY4OTMgM0MxNS42ODQgMyAxOC4xMzE3IDUuMzIyNTEgMTguMyA4LjI1QzE5Ljg4OTMgOC45NDQ4OCAyMSAxMC42NTAzIDIxIDEyLjQ5NjlDMjEgMTMuNTY5MyAyMC42MjU0IDE0LjU1NDEgMjAgMTUuMzI3NU0xMi41IDEyLjk5OTVMMTAuNSAyMS4wMDA4TTguNSAxMS45OTk1TDYuNSAyMC4wMDA4TTE2LjUgMTJMMTQuNSAyMC4wMDEzIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQo8L3N2Zz4=",
+    "descriptor" : {
+      "mediaType" : "image/svg+xml",
+      "width" : 800,
+      "height" : 800,
+      "size" : 617,
+      "etag" : "e2c15e868240dbb79792dfb7296c04c440c720660f9e6324859f16b74c71648a",
+      "previewDescriptor" : {
+        "mediaType" : "image/svg+xml",
+        "width" : 800,
+        "height" : 800,
+        "size" : 617,
+        "etag" : "e2c15e868240dbb79792dfb7296c04c440c720660f9e6324859f16b74c71648a"
+      }
+    },
+    "etag" : "e2c15e868240dbb79792dfb7296c04c440c720660f9e6324859f16b74c71648a",
+    "externalId" : null,
+    "fileName" : "cloud-rain-alt-2.svg",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "621aee70-8a34-11f0-83d4-3ddd8adc4d0c"
+    },
+    "link" : "/api/images/tenant/cloud-rain-alt-2.svg",
+    "name" : "cloud-rain-alt-2.svg",
+    "preview" : null,
+    "public" : true,
+    "publicLink" : "/api/images/public/hwwmEwP7ol0z121XIljy3utGmzqsMRAY",
+    "publicResourceKey" : "hwwmEwP7ol0z121XIljy3utGmzqsMRAY",
+    "resourceKey" : "cloud-rain-alt-2.svg",
+    "resourceSubType" : "IMAGE",
+    "resourceType" : "IMAGE",
+    "title" : "cloud-rain-alt-2.svg"
+  }
+}

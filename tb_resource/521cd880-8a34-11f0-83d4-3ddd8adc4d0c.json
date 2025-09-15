@@ -1,0 +1,37 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "data" : "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OTAiIGhlaWdodD0iNDkwIj4KPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjM2IiBzdHJva2UtbGluZWNhcD0icm91bmQiCmQ9Im0yODAsMjc4YTE1MywxNTMgMCAxLDAtMiwybDE3MCwxNzBtLTkxLTExNyAxMTAsMTEwLTI2LDI2LTExMC0xMTAiLz4KPC9zdmc+IA==",
+    "descriptor" : {
+      "mediaType" : "image/svg+xml",
+      "width" : 490,
+      "height" : 490,
+      "size" : 256,
+      "etag" : "bb0050f79e1abfae0f8f4033868e7df4f30dc57353715a3b110fbfabc2a94b6b",
+      "previewDescriptor" : {
+        "mediaType" : "image/svg+xml",
+        "width" : 490,
+        "height" : 490,
+        "size" : 256,
+        "etag" : "bb0050f79e1abfae0f8f4033868e7df4f30dc57353715a3b110fbfabc2a94b6b"
+      }
+    },
+    "etag" : "bb0050f79e1abfae0f8f4033868e7df4f30dc57353715a3b110fbfabc2a94b6b",
+    "externalId" : null,
+    "fileName" : "magnifying-glass-icon-2.svg",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "521cd880-8a34-11f0-83d4-3ddd8adc4d0c"
+    },
+    "link" : "/api/images/tenant/magnifying-glass-icon-2.svg",
+    "name" : "magnifying-glass-icon-2.svg",
+    "preview" : null,
+    "public" : true,
+    "publicLink" : "/api/images/public/oJuccPIw7neETcp2HiURAeRA7rxk4UE3",
+    "publicResourceKey" : "oJuccPIw7neETcp2HiURAeRA7rxk4UE3",
+    "resourceKey" : "magnifying-glass-icon-2.svg",
+    "resourceSubType" : "IMAGE",
+    "resourceType" : "IMAGE",
+    "title" : "magnifying-glass-icon-2.svg"
+  }
+}

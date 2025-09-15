@@ -1,0 +1,37 @@
+{
+  "entityType" : "TB_RESOURCE",
+  "entity" : {
+    "data" : "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJtZGktYWNjb3VudC1hbGVydCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTAgNEE0IDQgMCAwIDEgMTQgOEE0IDQgMCAwIDEgMTAgMTJBNCA0IDAgMCAxIDYgOEE0IDQgMCAwIDEgMTAgNE0xMCAxNEMxNC40MiAxNCAxOCAxNS43OSAxOCAxOFYyMEgyVjE4QzIgMTUuNzkgNS41OCAxNCAxMCAxNE0yMCAxMlY3SDIyVjEzSDIwTTIwIDE3VjE1SDIyVjE3SDIwWiIgLz48L3N2Zz4=",
+    "descriptor" : {
+      "mediaType" : "image/svg+xml",
+      "width" : 24,
+      "height" : 24,
+      "size" : 263,
+      "etag" : "d126f75c2ab31d25c5f782f2da6bab95bb356fa8074cd402325599f7be8317c9",
+      "previewDescriptor" : {
+        "mediaType" : "image/svg+xml",
+        "width" : 24,
+        "height" : 24,
+        "size" : 263,
+        "etag" : "d126f75c2ab31d25c5f782f2da6bab95bb356fa8074cd402325599f7be8317c9"
+      }
+    },
+    "etag" : "d126f75c2ab31d25c5f782f2da6bab95bb356fa8074cd402325599f7be8317c9",
+    "externalId" : null,
+    "fileName" : "account-alert.svg",
+    "id" : {
+      "entityType" : "TB_RESOURCE",
+      "id" : "9558c280-8a34-11f0-83d4-3ddd8adc4d0c"
+    },
+    "link" : "/api/images/tenant/account-alert.svg",
+    "name" : "account-alert.svg",
+    "preview" : null,
+    "public" : true,
+    "publicLink" : "/api/images/public/k4OP6YhWEFMbVwfbEZXR7rIflsNjHbpt",
+    "publicResourceKey" : "k4OP6YhWEFMbVwfbEZXR7rIflsNjHbpt",
+    "resourceKey" : "account-alert.svg",
+    "resourceSubType" : "IMAGE",
+    "resourceType" : "IMAGE",
+    "title" : "account-alert.svg"
+  }
+}
